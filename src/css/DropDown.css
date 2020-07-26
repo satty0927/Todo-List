@@ -1,0 +1,47 @@
+#dropdownDiv {
+  position: relative;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+#inputDiv {
+  position: relative;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+#dropdownDiv select {
+  border-radius: 4px;
+  height: 35px;
+  width: 250px;
+  margin-left: 25px;
+  background-color: #ede682;
+}
+
+#dropdownDiv button {
+  border-radius: 4px;
+  height: 35px;
+  width: 70px;
+  margin-right: 80px;
+  float: right;
+  background-color: #febf63;
+  cursor: pointer;
+}
+
+#inputDiv form input {
+  border-radius: 4px;
+  height: 35px;
+  width: 240px;
+  margin-left: 25px;
+  background-color: #ede682;
+}
+
+#inputDiv form button {
+  border-radius: 4px;
+  height: 35px;
+  width: 70px;
+  margin-right: 80px;
+  float: right;
+  background-color: #febf63;
+  cursor: pointer;
+}

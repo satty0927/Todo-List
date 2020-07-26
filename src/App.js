@@ -1,26 +1,49 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './css/InputStyles.css';
+import ListItem from './ListItem';
+import Input from './Input';
+const axios = require('axios');
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class ToDoItems extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      taskList: []
+    }
+    this.updateStateTaskList = this.updateStateTaskList.bind(this);
+    this.deleteTask = this.deleteTask.bind(this);
+  }
+  //This method will update state TaskList.
+  updateStateTaskList(value) {
+    var valueToUpdate = JSON.parse(JSON.stringify(value));
+    this.setState({
+      taskList: valueToUpdate
+    })
+  }
+
+  //This method would delete task.
+  deleteTask(key) {
+    console.log("TasksList Delete Task");
+    var intialList = this.state.taskList;
+    var filteredList = intialList.filter(val => val.key !== key);
+    this.refs.child.updateCurrentTableTasks(JSON.stringify(filteredList));
+    this.setState({
+      taskList: filteredList
+    })
+  }
+
+  render() {
+    return (
+      <div>
+        <div className="InputParent">
+          <Input stateUpdator={this.updateStateTaskList} ref="child" />
+        </div>
+        <div className="App">
+          <ListItem id="listItem" passedTask={this.state.taskList} deleteTasks={this.deleteTask} />
+        </div>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default ToDoItems;

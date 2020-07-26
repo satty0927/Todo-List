@@ -1,0 +1,23 @@
+{
+  "getHeaders": {
+    "secret-key": "$2b$10$7GYOZwm4BiHe2D29KfVEpeRifXDtCYc0DNylRKf.fZZT9k/LvZG8C",
+    "Content-Type": "application/json"
+  },
+  "postHeaders": {
+    "secret-key": "$2b$10$7GYOZwm4BiHe2D29KfVEpeRifXDtCYc0DNylRKf.fZZT9k/LvZG8C",
+    "Content-Type": "application/json",
+    "private": "true",
+    "versioning": "false",
+    "name": "undefined"
+  },
+  "putHeaders": {
+    "secret-key": "$2b$10$7GYOZwm4BiHe2D29KfVEpeRifXDtCYc0DNylRKf.fZZT9k/LvZG8C",
+    "Content-Type": "application/json",
+    "versioning": "false"
+  },
+  "deleteHeaders": {
+    "secret-key": "$2b$10$7GYOZwm4BiHe2D29KfVEpeRifXDtCYc0DNylRKf.fZZT9k/LvZG8C"
+  },
+  "baseAddress": "https://api.jsonbin.io/b",
+  "mainEndpoint": "5f1c14e591806166284893c9"
+}

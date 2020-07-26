@@ -1,0 +1,37 @@
+.listItem {
+  color: white;
+  width: 300px;
+  background-color: #ede682;
+  height: 50px;
+  margin: 20px auto;
+  border-radius: 3px;
+}
+
+.listItem p {
+  position: relative;
+  padding: 12px;
+}
+
+.listItem p span {
+  color: brown;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  margin: auto;
+}
+
+.delIcon {
+  font-size: 25px;
+}
+
+.delIcon:hover {
+  font-size: 30px;
+}
+
+.listItem p input {
+  border: 0;
+  background: transparent;
+  color: black;
+  font-size: 18px;
+  outline: none;
+}

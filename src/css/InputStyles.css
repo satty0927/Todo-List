@@ -1,0 +1,23 @@
+body {
+  background-color: #7fdbda;
+}
+
+.App {
+  background-color: #ade498;
+  min-height: 550px;
+  width: 400px;
+  float: right;
+  margin-right: 250px;
+  margin-top: 25px;
+  border-radius: 3px;
+}
+
+.InputParent {
+  background-color: #ade498;
+  min-height: 400px;
+  width: 450px;
+  float: left;
+  margin-left: 150px;
+  margin-top: 100px;
+  border-radius: 3px;
+}
